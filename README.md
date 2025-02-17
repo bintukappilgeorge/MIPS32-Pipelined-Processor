@@ -93,6 +93,19 @@ The processor follows a 5-stage pipeline:
 
 - The simulation checks for correct instruction execution, hazard handling, and branch prediction effectiveness.
 
+### Testbench and Simulation
+
+The following table shows a sample assembly program along with its machine code in binary representation:
+
+| Assembly Instruction | Machine Code (Binary) |
+|----------------------|-----------------------|
+| ADDI R1,R0,10       | 001010 00000 00001 0000000000001010 |
+| ADDI R2,R0,20       | 001010 00000 00010 0000000000010100 |
+| ADDI R3,R0,25       | 001010 00000 00011 0000000000011001 |
+| ADD R4,R1,R2        | 000000 00001 00010 00100 00000 000000 |
+| ADD R5,R4,R3        | 000000 00100 00011 00101 00000 000000 |
+| HLT                 | 111111 00000 00000 00000 00000 000000 |
+
 ## Output
 ![Screenshot 2025-02-17 112759](https://github.com/user-attachments/assets/287e993c-4273-485b-a24e-1cf051a01859)
 
